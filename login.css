@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("c:\Users\Lily\OneDrive\Pictures\images (4).jpg") center/cover no-repeat fixed;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #087f5b;
+    text-decoration: none;
+}
+
+h1 {
+    color: #087f5b;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin: 16px 0 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #b8e8d4;
+    border-color: #087f5b;
+}
+
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #087f5b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #075b46;
+}
+
+.switch-page {
+    margin-top: 22px;
+    text-align: center;
+    color: #555;
+}
+
+.switch-page a {
+    color: #087f5b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 25px 20px;
+    }
+}

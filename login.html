@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizVerse - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <div class="auth-card">
+        <a class="back-link" href="index.html">← Back to Home</a>
+
+        <h1>Welcome Back!</h1>
+        <p class="subtitle">Login to your QuizVerse account</p>
+
+        <form id="login-form">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <label for="role">Login As</label>
+            <select id="role" required>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+            </select>
+
+            <button type="submit">Login</button>
+            <p id="message"></p>
+        </form>
+
+        <p class="switch-page">
+            Don't have an account?
+            <a href="signup.html">Sign Up</a>
+        </p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
