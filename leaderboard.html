@@ -1,0 +1,82 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leaderboard | QuizVerse</title>
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+
+            <div class="brand">Quiz<span>Verse</span></div>
+
+            <p class="muted">Student Panel</p>
+
+            <nav>
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+
+                <a class="nav-link" href="quizzes.html">Available Quizzes</a>
+
+                <a class="nav-link" href="results.html">Latest Results</a>
+
+                <a class="nav-link" href="history.html">Quiz History</a>
+
+                <a class="nav-link active" href="leaderboard.html">Leaderboard</a>
+
+                <a class="nav-link" href="profile.html">My Profile</a>
+            </nav>
+
+        </aside>
+
+        <main class="main">
+
+            <div class="topbar">
+
+                <h1>Leaderboard</h1>
+
+                <div>
+                    <span id="userName"></span>
+
+                    <button class="btn secondary" id="logoutBtn">
+                        Logout
+                    </button>
+                </div>
+
+            </div>
+
+            <section class="panel">
+
+                <p class="muted">
+                    Ranking uses each student's best percentage recorded in this browser.
+                </p>
+
+                <h2>Top Students</h2>
+
+                <div id="leaderboard" class="table-wrap">
+
+                    <p class="empty">Loading leaderboard...</p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="common.js"></script>
+    <script src="leaderboard.js"></script>
+
+</body>
+
+</html>
