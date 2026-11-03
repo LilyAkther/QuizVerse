@@ -1,0 +1,41 @@
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.leaderboard-table th {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.leaderboard-table tr:hover {
+    background: #f9fafb;
+}
+
+.rank {
+    font-weight: bold;
+}
+
+.current-user {
+    background: #e5e7eb;
+    font-weight: bold;
+}
+
+.empty {
+    padding: 25px;
+    text-align: center;
+    color: #6b7280;
+}
