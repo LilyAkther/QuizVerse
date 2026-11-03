@@ -67,7 +67,7 @@ if (!currentUser || currentUser.role !== 'Student') {
 
     } else {
 
-        let html = `
+        let html = 
             <table class="leaderboard-table">
                 <thead>
                     <tr>
@@ -78,7 +78,7 @@ if (!currentUser || currentUser.role !== 'Student') {
                     </tr>
                 </thead>
                 <tbody>
-        `;
+        ;
 
         ranking.forEach(function (student, index) {
 
@@ -87,20 +87,20 @@ if (!currentUser || currentUser.role !== 'Student') {
                     ? 'current-user'
                     : '';
 
-            html += `
+            html += 
                 <tr class="${activeClass}">
                     <td class="rank">#${index + 1}</td>
                     <td>${student.name}</td>
                     <td>${student.attempts}</td>
                     <td>${student.score}%</td>
                 </tr>
-            `;
+            ;
         });
 
-        html += `
+        html += 
                 </tbody>
             </table>
-        `;
+        ;
 
         leaderboard.innerHTML = html;
     }
