@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Quiz | QuizVerse</title>
+
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <div class="brand">Quiz<span>Verse</span></div>
+
+            <nav>
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                <a class="nav-link" href="quizzes.html">Available Quizzes</a>
+                <a class="nav-link" href="history.html">Quiz History</a>
+                <a class="nav-link" href="profile.html">My Profile</a>
+            </nav>
+        </aside>
+
+        <main class="main">
+
+            <div class="topbar">
+                <h1>Take Quiz</h1>
+
+                <div>
+                    <span id="userName"></span>
+                    <button class="btn secondary" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+
+            <section class="panel">
+
+                <div class="rowline">
+
+                    <div>
+                        <h2 id="quizTitle">Quiz</h2>
+                        <p id="progress" class="muted"></p>
+                    </div>
+
+                    <span id="timer" class="pill">05:00</span>
+
+                </div>
+
+                <div id="questionArea"></div>
+
+                <div style="display:flex; gap:10px; justify-content:space-between;">
+
+                    <button id="previousBtn" class="btn secondary">
+                        Previous
+                    </button>
+
+                    <button id="nextBtn" class="btn">
+                        Next
+                    </button>
+
+                    <button id="submitBtn" class="btn" hidden>
+                        Submit Quiz
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="common.js"></script>
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>
