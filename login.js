@@ -36,7 +36,7 @@ loginForm.addEventListener("submit", function (event) {
         if (user.role === "Teacher") {
             window.location.href = "teacher-dashboard.html";
         } else {
-            window.location.href = "student-dashboard.html";
+            window.location.href = "student/dashboard.html";
         }
     }, 700);
 });
